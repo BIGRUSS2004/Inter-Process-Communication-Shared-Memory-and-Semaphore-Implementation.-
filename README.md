@@ -1,4 +1,5 @@
 IPC with Semaphores and Shared Memory
+
 Overview
 This project demonstrates Inter-Process Communication (IPC) in a multi-process environment using semaphores for synchronization and shared memory for data exchange. It simulates a real-world banking scenario where multiple processes interact to manage a shared bank account in a synchronized and controlled manner.
 
