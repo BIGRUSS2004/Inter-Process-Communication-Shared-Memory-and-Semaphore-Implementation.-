@@ -1,11 +1,13 @@
 IPC with Semaphores and Shared Memory
 
-Overview
+Overview:
+
 This project demonstrates Inter-Process Communication (IPC) in a multi-process environment using semaphores for synchronization and shared memory for data exchange. It simulates a real-world banking scenario where multiple processes interact to manage a shared bank account in a synchronized and controlled manner.
 
 The project is designed to highlight key software engineering concepts such as concurrency, process synchronization, and resource sharing, making it a strong addition to any portfolio.
 
-What the Program Does
+What the Program Does:
+
 The program simulates a scenario where parents (Dear Old Dad and Lovable Mom) and children (Poor Students) interact to manage a shared bank account:
 
 Parent Processes:
