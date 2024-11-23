@@ -75,9 +75,13 @@ Step 2: Run the Program
 Copy code:
 
 ./ipc_project <num_parents> <num_children>
+
 Replace <num_parents> with the number of parent processes (e.g., 1 or 2).
+
 Replace <num_children> with the number of child processes (e.g., 1 or more).
+
 Step 3: Observe the Output
+
 The program logs interactions between the parents and children, including deposits, withdrawals, and balance checks.
 
 Development Tools
@@ -103,22 +107,30 @@ A practical exploration of process communication and concurrency challenges.
 Linux Manual Pages:
 
 shmget: For shared memory allocation.
+
 semget: For creating semaphores.
+
 fork: For creating child processes.
+
 GeeksforGeeks - IPC Mechanisms in C:
 
 A hands-on guide to shared memory and semaphores. GeeksforGeeks IPC Tutorial
 Khan Academy Programming Basics:
 
 Foundational programming courses for beginners. Khan Academy Programming(https://www.khanacademy.org/)
+
 LaunchCode Debugging Exercises:
+
 Exercises that build core debugging skills. LaunchCode Debugging
 
 Future Enhancements
 This project can be further enhanced by:
 
 Implementing semaphore-based signaling to replace busy-waiting.
+
 Introducing logging to an external file for better traceability.
+
 Creating a graphical interface to visualize transactions.
-Author
+Author:
+
 Russell Langham Jr
