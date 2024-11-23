@@ -22,26 +22,35 @@ Also monitors the account balance.
 Deposits money based on her own logic when the balance is low.
 Ensures the shared account remains functional and logs every action.
 Child Processes:
+
 Each student:
+
 Checks the bank account balance.
 Determines how much money they need to withdraw.
 Withdraws the requested amount if sufficient funds are available, or logs that funds were insufficient.
 Shared Memory:
+
 The bank account balance is stored in shared memory, allowing all processes to access and modify it.
 Shared memory ensures real-time updates that all processes can observe.
 Semaphores:
+
 A semaphore ensures mutual exclusion, so only one process can access the shared memory at a time.
 Prevents race conditions and guarantees consistency of the bank account balance.
 Synchronization:
+
 Parent and child processes alternate their access to the shared memory using synchronization mechanisms, ensuring orderly interaction.
 Key Features
 Inter-Process Communication (IPC):
+
 Uses shared memory to allow multiple processes to communicate and share a single resource.
 Concurrency Control:
+
 Implements semaphore-based synchronization to manage access to shared memory and ensure data integrity.
 Real-World Use Case Simulation:
+
 Models practical scenarios like fund deposits, withdrawals, and resource contention between multiple users.
 Multi-Process Interaction:
+
 Showcases how parent and child processes behave under shared resource constraints.
 Why This Project Matters
 This project highlights key software engineering and operating system principles, making it valuable for:
@@ -57,10 +66,14 @@ Command Line Access and Running the Program
 This project is terminal-based and requires a Linux/UNIX environment. The following commands will help you compile and execute the code.
 
 Step 1: Compile the Program
+
 Copy code:
+
 gcc -o ipc_project ipc_project.c
 Step 2: Run the Program
+
 Copy code:
+
 ./ipc_project <num_parents> <num_children>
 Replace <num_parents> with the number of parent processes (e.g., 1 or 2).
 Replace <num_children> with the number of child processes (e.g., 1 or more).
